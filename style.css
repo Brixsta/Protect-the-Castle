@@ -21,17 +21,17 @@
   background-color: white;
   position: absolute;
   z-index: 2000;
-  background-image: url("./images/splash.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position-y: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.splash-container img {
+  margin-top: -100px;
 }
 
 .start-game-button {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 81%;
-  left: 50%;
   background-color: white;
   font-size: 30px;
   padding: 10px 20px;
@@ -39,23 +39,14 @@
   box-shadow: 0px 0px 0px 5px black;
   transition: ease-in 300ms all;
   font-family: "Luckiest Guy", cursive;
-  overflow: hidden;
-}
-
-.start-game-button:before {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  content: "";
-  background-color: red;
-  top: 0;
-  left: -100%;
-  z-index: -1;
+  position: relative;
+  margin-top: 30px;
 }
 
 .start-game-button:hover {
   cursor: pointer;
   color: white;
+  background-color: red;
 }
 
 .start-game-button:before {
