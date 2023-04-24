@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Protect the Castle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/castle.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="splash-container">
+        <a class="start-game-button">Start Game</a>
+      </div>
+      <div class="canvas-container">
+        <div class="metrics-container">
+          <div class="score-container">Score: 0</div>
+          <div class="monsters-killed-container">Killed: 0</div>
+          <div class="castle-health-container">
+            <img src="./images/castle.png" height="65px" width="65px" />
+            <div class="castle-health-bar">
+              <div class="castle-blood"></div>
+            </div>
+          </div>
+        </div>
+        <canvas height="800px" width="1000px" id="game"></canvas>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
